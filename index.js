@@ -46,3 +46,12 @@ function playSound(key)
             alert("Wrong key pressed.");
     }
 }
+
+
+function addStyle(key)
+{
+    document.querySelector("."+ key).classList.add("pressed");
+    setTimeout(function(){
+        document.querySelector("."+ key).classList.remove("pressed");
+    }, 100);
+}
