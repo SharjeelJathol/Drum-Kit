@@ -1,3 +1,11 @@
+var vary=document.querySelectorAll(".drum").length;
+for(var i=0; i<vary; i++)
+{
+    document.querySelectorAll(".drum")[i].addEventListener("click", function(){
+        playSound(this.innerHTML);
+        addStyle(this.innerHTML);
+    });
+}
 addEventListener("keydown", function(event){
     playSound(event.key);
     addStyle(event.key);
