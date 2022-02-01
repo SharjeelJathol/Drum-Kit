@@ -1,3 +1,8 @@
+addEventListener("keydown", function(event){
+    playSound(event.key);
+    addStyle(event.key);
+});
+
 function playSound(key)
 {
     switch(key){
